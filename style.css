@@ -29,8 +29,8 @@ body {
 }
 
 .navbar__elt {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 30px;
+  font-family: "Inter", Courier, monospace;
+  font-size: 3vw;
   color: #e0f0ff;
 }
 

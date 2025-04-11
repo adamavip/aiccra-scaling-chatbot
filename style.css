@@ -120,6 +120,19 @@ body {
   align-self: flex-end;
 }
 
+.loading-image {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .chat__container__form {
   flex: 1;
   width: 100%;

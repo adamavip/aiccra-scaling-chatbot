@@ -30,7 +30,15 @@ const fetchData = async (request) => {
 
   // implement a loader while fecthing the data
   const MessageEl = document.createElement("div");
-  addMessage("Loading...", false);
+  let loading = `<img
+        class=".loading-image"
+        src="img/loading.png"
+        width="20px"
+        height="20px"
+        alt=""
+        style="animation: rotate 2s linear infinite; @keyframes rotate{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}"
+      />`;
+  addMessage(loading, false);
 
   const response = await axios
     .post("https://api.chatpdf.com/v1/chats/message", data, config)
